@@ -54,7 +54,7 @@ common:
     url: https://developers.pipefy.com
   - type: Pricing
     url: https://www.pipefy.com/pricing/
-  - type: Sign Up
+  - type: SignUp
     url: https://app.pipefy.com/public/registration
   - type: Help Center
     url: https://help.pipefy.com
@@ -62,7 +62,7 @@ common:
     url: https://community.pipefy.com
   - type: Blog
     url: https://www.pipefy.com/blog/
-  - type: Status
+  - type: StatusPage
     url: https://status.pipefy.com
   - type: LinkedIn
     url: https://www.linkedin.com/company/pipefy/
