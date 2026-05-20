@@ -48,6 +48,8 @@ apis:
         url: https://help.pipefy.com/en/articles/5580799-how-to-use-pipefy-s-api
 
 common:
+  - type: GitHubOrganization
+    url: https://github.com/pipefy
   - type: Website
     url: https://www.pipefy.com
   - type: Documentation
