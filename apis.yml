@@ -68,6 +68,8 @@ common:
     url: https://status.pipefy.com
   - type: LinkedIn
     url: https://www.linkedin.com/company/pipefy/
+  - type: LLMsTxt
+    url: https://developers.pipefy.com/llms.txt
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
