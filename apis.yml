@@ -11,65 +11,67 @@ description: >-
 type: Index
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - Workflow Automation
-  - Business Process Management
-  - No-Code
-  - BPM
-  - GraphQL
-  - Process Orchestration
+- Workflow Automation
+- Business Process Management
+- No-Code
+- BPM
+- GraphQL
+- Process Orchestration
 url: >-
   https://raw.githubusercontent.com/api-evangelist/pipefy/refs/heads/main/apis.yml
 created: '2026-05-11'
 modified: '2026-05-11'
 specificationVersion: '0.19'
 apis:
-  - aid: pipefy:graphql-api
-    name: Pipefy GraphQL API
-    description: >-
-      GraphQL API for managing pipes, cards, phases, fields, organizations,
-      users, webhooks, and AI agents on the Pipefy workflow automation
-      platform. Authentication is performed using an OAuth2 Bearer token
-      (Personal Access Token or Service Account) in the Authorization header.
-    humanURL: https://developers.pipefy.com/reference/the-graphql-endpoint
-    baseURL: https://api.pipefy.com/graphql
-    tags:
-      - Workflow Automation
-      - GraphQL
-      - BPM
-      - No-Code
-    properties:
-      - type: Documentation
-        url: https://developers.pipefy.com/reference
-      - type: Authentication
-        url: https://developers.pipefy.com/reference/authentication-copy
-      - type: GraphQL Endpoint
-        url: https://developers.pipefy.com/reference/the-graphql-endpoint
-      - type: Help Center
-        url: https://help.pipefy.com/en/articles/5580799-how-to-use-pipefy-s-api
-
-common:
-  - type: GitHubOrganization
-    url: https://github.com/pipefy
-  - type: Website
-    url: https://www.pipefy.com
+- aid: pipefy:graphql-api
+  name: Pipefy GraphQL API
+  description: >-
+    GraphQL API for managing pipes, cards, phases, fields, organizations,
+    users, webhooks, and AI agents on the Pipefy workflow automation
+    platform. Authentication is performed using an OAuth2 Bearer token
+    (Personal Access Token or Service Account) in the Authorization header.
+  humanURL: https://developers.pipefy.com/reference/the-graphql-endpoint
+  baseURL: https://api.pipefy.com/graphql
+  tags:
+  - Workflow Automation
+  - GraphQL
+  - BPM
+  - No-Code
+  properties:
   - type: Documentation
-    url: https://developers.pipefy.com
-  - type: Pricing
-    url: https://www.pipefy.com/pricing/
-  - type: SignUp
-    url: https://app.pipefy.com/public/registration
+    url: https://developers.pipefy.com/reference
+  - type: Authentication
+    url: https://developers.pipefy.com/reference/authentication-copy
+  - type: GraphQL Endpoint
+    url: https://developers.pipefy.com/reference/the-graphql-endpoint
   - type: Help Center
-    url: https://help.pipefy.com
-  - type: Community
-    url: https://community.pipefy.com
-  - type: Blog
-    url: https://www.pipefy.com/blog/
-  - type: StatusPage
-    url: https://status.pipefy.com
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/pipefy/
-  - type: LLMsTxt
-    url: https://developers.pipefy.com/llms.txt
+    url: https://help.pipefy.com/en/articles/5580799-how-to-use-pipefy-s-api
+
+  - url: graphql/pipefy-graphql.md
+    type: GraphQL
+common:
+- type: GitHubOrganization
+  url: https://github.com/pipefy
+- type: Website
+  url: https://www.pipefy.com
+- type: Documentation
+  url: https://developers.pipefy.com
+- type: Pricing
+  url: https://www.pipefy.com/pricing/
+- type: SignUp
+  url: https://app.pipefy.com/public/registration
+- type: Help Center
+  url: https://help.pipefy.com
+- type: Community
+  url: https://community.pipefy.com
+- type: Blog
+  url: https://www.pipefy.com/blog/
+- type: StatusPage
+  url: https://status.pipefy.com
+- type: LinkedIn
+  url: https://www.linkedin.com/company/pipefy/
+- type: LLMsTxt
+  url: https://developers.pipefy.com/llms.txt
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com

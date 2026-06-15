@@ -1,0 +1,234 @@
+{
+  "item": [
+    {
+      "id": "b01397f9-5f1a-4913-bde1-d806cd95f3d2",
+      "name": "GraphQL",
+      "description": {
+        "content": "Single GraphQL entry point for all Pipefy operations.",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "11d288c4-72b7-40e6-869a-4cde4426b7b3",
+          "name": "Execute a GraphQL query or mutation",
+          "request": {
+            "name": "Execute a GraphQL query or mutation",
+            "description": {
+              "content": "Submit GraphQL queries and mutations against the Pipefy API.\nExample queries cover pipes, cards, phases, fields, organizations,\nusers, webhooks, AI agents, automations, and reports.\nExample mutations cover create/update/delete on pipes, cards,\nphases, fields, AI agents, automations, email templates, and roles.\n",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "graphql"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "POST",
+            "auth": null,
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"query\": \"<string>\",\n  \"variables\": {\n    \"key_0\": \"string\"\n  },\n  \"operationName\": \"<string>\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": [
+            {
+              "id": "4776e6a1-93d5-4b75-8859-91011e5c352a",
+              "name": "GraphQL response.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "graphql"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  },
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"query ListPipes($orgId: ID!) {\\n  organization(id: $orgId) {\\n    pipes {\\n      id\\n      name\\n    }\\n  }\\n}\\n\",\n  \"variables\": {\n    \"orgId\": \"1\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"data\": {\n    \"key_0\": true,\n    \"key_1\": 6674.682942152005\n  },\n  \"errors\": [\n    {\n      \"message\": \"string\",\n      \"path\": [\n        \"string\",\n        \"string\"\n      ],\n      \"extensions\": {\n        \"key_0\": 878,\n        \"key_1\": 634,\n        \"key_2\": 9083.881124163534\n      }\n    },\n    {\n      \"message\": \"string\",\n      \"path\": [\n        \"string\",\n        \"string\"\n      ],\n      \"extensions\": {\n        \"key_0\": 3900,\n        \"key_1\": \"string\"\n      }\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            },
+            {
+              "id": "b6a0a850-c42b-48a0-a536-5534392904d3",
+              "name": "Missing or invalid Bearer token.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "graphql"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"query ListPipes($orgId: ID!) {\\n  organization(id: $orgId) {\\n    pipes {\\n      id\\n      name\\n    }\\n  }\\n}\\n\",\n  \"variables\": {\n    \"orgId\": \"1\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Unauthorized",
+              "code": 401,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            },
+            {
+              "id": "a7435db8-2a9d-4ccc-b2ed-0d9b851fe24a",
+              "name": "Rate limit exceeded.",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "graphql"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "description": {
+                      "content": "Added as a part of security scheme: bearer",
+                      "type": "text/plain"
+                    },
+                    "key": "Authorization",
+                    "value": "Bearer <token>"
+                  }
+                ],
+                "method": "POST",
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"query\": \"query ListPipes($orgId: ID!) {\\n  organization(id: $orgId) {\\n    pipes {\\n      id\\n      name\\n    }\\n  }\\n}\\n\",\n  \"variables\": {\n    \"orgId\": \"1\"\n  }\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                }
+              },
+              "status": "Too Many Requests",
+              "code": 429,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/plain"
+                }
+              ],
+              "body": "",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://api.pipefy.com",
+      "key": "baseUrl"
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}"
+      }
+    ]
+  },
+  "info": {
+    "_postman_id": "61f32233-fa3f-40b8-90f5-84d31eeb13e7",
+    "name": "Pipefy GraphQL API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "Pipefy exposes a single GraphQL endpoint at https://api.pipefy.com/graphql\nfor managing pipes, cards, phases, fields, organizations, users,\nwebhooks, and AI agents on the Pipefy workflow automation platform.\n\nAll operations - queries and mutations - are submitted as POST requests\nto the /graphql endpoint with a JSON body of the form\n`{ \"query\": \"...\", \"variables\": { ... } }`.\n\nAuthentication uses an OAuth 2.0 Bearer token (Personal Access Token or\nService Account) supplied in the Authorization header.\n\n\nContact Support:\n Name: API Evangelist\n Email: kin@apievangelist.com",
+      "type": "text/plain"
+    }
+  }
+}
