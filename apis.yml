@@ -9,7 +9,7 @@ description: >-
   organizations, webhooks, and AI-driven workflow integrations, with OAuth2
   Bearer token authentication via Personal Access Tokens or Service Accounts.
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Workflow Automation
 - Business Process Management
