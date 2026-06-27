@@ -58,7 +58,7 @@ common:
   url: https://developers.pipefy.com
 - type: Pricing
   url: https://www.pipefy.com/pricing/
-- type: SignUp
+- type: Signup
   url: https://app.pipefy.com/public/registration
 - type: Help Center
   url: https://help.pipefy.com
@@ -70,7 +70,7 @@ common:
   url: https://status.pipefy.com
 - type: LinkedIn
   url: https://www.linkedin.com/company/pipefy/
-- type: LLMsTxt
+- type: LlmsText
   url: https://developers.pipefy.com/llms.txt
 maintainers:
 - FN: Kin Lane
