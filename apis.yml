@@ -50,6 +50,12 @@ apis:
   - url: graphql/pipefy-graphql.md
     type: GraphQL
 common:
+- type: TrustCenter
+  url: security/pipefy-trust-center.yml
+- type: DomainSecurity
+  url: security/pipefy-domain-security.yml
+- type: Authentication
+  url: authentication/pipefy-authentication.yml
 - type: GitHubOrganization
   url: https://github.com/pipefy
 - type: Website

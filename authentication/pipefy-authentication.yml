@@ -1,0 +1,15 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/pipefy-openapi.yml
+summary:
+  types:
+  - http
+schemes:
+- name: bearerAuth
+  type: http
+  scheme: bearer
+  description: |-
+    Personal Access Token or Service Account token. Pass as
+    `Authorization: Bearer <token>`.
+  sources:
+  - openapi/pipefy-openapi.yml
