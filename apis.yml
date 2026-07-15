@@ -50,6 +50,8 @@ apis:
   - url: graphql/pipefy-graphql.md
     type: GraphQL
 common:
+- type: AgenticAccess
+  url: agentic-access/pipefy-agentic-access.yml
 - type: TrustCenter
   url: security/pipefy-trust-center.yml
 - type: DomainSecurity
