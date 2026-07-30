@@ -9,7 +9,19 @@ description: >-
   organizations, webhooks, and AI-driven workflow integrations, with OAuth2
   Bearer token authentication via Personal Access Tokens or Service Accounts.
 type: Index
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pipefy.png
 tags:
 - Workflow Automation
 - Business Process Management
@@ -26,9 +38,8 @@ apis:
 - aid: pipefy:graphql-api
   name: Pipefy GraphQL API
   description: >-
-    GraphQL API for managing pipes, cards, phases, fields, organizations,
-    users, webhooks, and AI agents on the Pipefy workflow automation
-    platform. Authentication is performed using an OAuth2 Bearer token
+    GraphQL API for managing pipes, cards, phases, fields, organizations, users, webhooks, and AI agents
+    on the Pipefy workflow automation platform. Authentication is performed using an OAuth2 Bearer token
     (Personal Access Token or Service Account) in the Authorization header.
   humanURL: https://developers.pipefy.com/reference/the-graphql-endpoint
   baseURL: https://api.pipefy.com/graphql
@@ -46,9 +57,18 @@ apis:
     url: https://developers.pipefy.com/reference/the-graphql-endpoint
   - type: Help Center
     url: https://help.pipefy.com/en/articles/5580799-how-to-use-pipefy-s-api
-
   - url: graphql/pipefy-graphql.md
     type: GraphQL
+- aid: pipefy:pipefy-graphql-api
+  name: Pipefy GraphQL API
+  description: Single GraphQL entry point for all Pipefy operations.
+  humanURL: https://developers.pipefy.com/reference/the-graphql-endpoint
+  baseURL: https://api.pipefy.com/graphql
+  tags:
+  - GraphQL
+  properties:
+  - type: OpenAPI
+    url: openapi/pipefy-graphql-api-openapi.yml
 common:
 - type: AgenticAccess
   url: agentic-access/pipefy-agentic-access.yml
