@@ -1,0 +1,127 @@
+openapi: 3.1.0
+info:
+  title: Pipefy GraphQL API
+  description: |
+    Pipefy exposes a single GraphQL endpoint at https://api.pipefy.com/graphql
+    for managing pipes, cards, phases, fields, organizations, users,
+    webhooks, and AI agents on the Pipefy workflow automation platform.
+
+    All operations - queries and mutations - are submitted as POST requests
+    to the /graphql endpoint with a JSON body of the form
+    `{ "query": "...", "variables": { ... } }`.
+
+    Authentication uses an OAuth 2.0 Bearer token (Personal Access Token or
+    Service Account) supplied in the Authorization header.
+  version: "1.0.0"
+  contact:
+    name: API Evangelist
+    email: kin@apievangelist.com
+  license:
+    name: Proprietary
+servers:
+  - url: https://api.pipefy.com
+    description: Pipefy production GraphQL endpoint
+security:
+  - bearerAuth: []
+tags:
+  - name: GraphQL
+    description: Single GraphQL entry point for all Pipefy operations.
+paths:
+  /graphql:
+    post:
+      tags: [GraphQL]
+      summary: Execute a GraphQL query or mutation
+      description: |
+        Submit GraphQL queries and mutations against the Pipefy API.
+        Example queries cover pipes, cards, phases, fields, organizations,
+        users, webhooks, AI agents, automations, and reports.
+        Example mutations cover create/update/delete on pipes, cards,
+        phases, fields, AI agents, automations, email templates, and roles.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/GraphQLRequest'
+            examples:
+              listPipes:
+                summary: List pipes in an organization
+                value:
+                  query: |
+                    query ListPipes($orgId: ID!) {
+                      organization(id: $orgId) {
+                        pipes {
+                          id
+                          name
+                        }
+                      }
+                    }
+                  variables:
+                    orgId: "1"
+              createCard:
+                summary: Create a card in a pipe
+                value:
+                  query: |
+                    mutation CreateCard($input: CreateCardInput!) {
+                      createCard(input: $input) {
+                        card { id title }
+                      }
+                    }
+                  variables:
+                    input:
+                      pipe_id: "12345"
+                      title: "New Card"
+      responses:
+        '200':
+          description: GraphQL response.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/GraphQLResponse'
+        '401':
+          description: Missing or invalid Bearer token.
+        '429':
+          description: Rate limit exceeded.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      description: |
+        Personal Access Token or Service Account token. Pass as
+        `Authorization: Bearer <token>`.
+  schemas:
+    GraphQLRequest:
+      type: object
+      required: [query]
+      properties:
+        query:
+          type: string
+          description: GraphQL query or mutation document.
+        variables:
+          type: object
+          description: GraphQL variables map.
+          additionalProperties: true
+        operationName:
+          type: string
+          description: Optional named operation to execute.
+    GraphQLResponse:
+      type: object
+      properties:
+        data:
+          type: object
+          additionalProperties: true
+        errors:
+          type: array
+          items:
+            type: object
+            properties:
+              message:
+                type: string
+              path:
+                type: array
+                items:
+                  type: string
+              extensions:
+                type: object
+                additionalProperties: true

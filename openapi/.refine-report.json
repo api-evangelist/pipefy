@@ -1,0 +1,14 @@
+{
+  "provider": "pipefy",
+  "sources": [
+    "pipefy-graphql-api-openapi.yml"
+  ],
+  "outputs": [
+    "pipefy-graphql-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
