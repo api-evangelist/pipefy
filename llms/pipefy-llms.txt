@@ -1,0 +1,245 @@
+# Pipefy Developers Documentation
+
+> Use Pipefy Platform to build Apps and extend Pipefy features.
+
+## Guides
+- [Orchestrating Agents with Pipefy](https://developers.pipefy.com/docs/orchestrating-agents-with-pipefy.md): Orchestrate interconnected AI agents to execute end-to-end workflows.
+
+## API Reference
+- [Why GraphQL?](https://developers.pipefy.com/reference/why-graphql.md)
+- [Why Pipefy’s GraphQL API?](https://developers.pipefy.com/reference/why-pipefys-graphql-api.md)
+- [Pipefy API Request Handling](https://developers.pipefy.com/reference/pipefy-api-request-handling.md)
+- [Creating calls with GraphQL](https://developers.pipefy.com/reference/creating-calls-with-graphql.md)
+- [GraphQL Structure](https://developers.pipefy.com/reference/graphql-structure.md)
+- [Limits and Best Practices](https://developers.pipefy.com/reference/limits-and-best-practices.md): Use this guide to ensure your queries are efficient, within limits, and optimized for the best performance.
+- [Exploring the Playground](https://developers.pipefy.com/reference/exploring-the-playground.md)
+- [Mastering the Documentation: Your Guide to Queries and Mutations](https://developers.pipefy.com/reference/mastering-the-documentation-your-guide-to-queries-and-mutations.md)
+- [Pipefy GraphQL Collection](https://developers.pipefy.com/reference/postman-collection.md): Pipefy GraphQL Collection  in JSON format to be used in HTTP Client tools (Postman/Insomnia)
+- [Authentication](https://developers.pipefy.com/reference/authentication.md)
+- [Service Accounts](https://developers.pipefy.com/reference/service-accounts.md)
+- [Personal Access Token](https://developers.pipefy.com/reference/personal-access-token.md)
+- [Organizations](https://developers.pipefy.com/reference/organizations.md)
+- [Users](https://developers.pipefy.com/reference/users.md)
+- [Pipes](https://developers.pipefy.com/reference/pipes.md)
+- [Cards](https://developers.pipefy.com/reference/cards.md)
+- [Fields](https://developers.pipefy.com/reference/fields.md)
+- [Phases](https://developers.pipefy.com/reference/phases.md)
+- [Pipe Reports](https://developers.pipefy.com/reference/pipe-reports.md)
+- [Database Tables](https://developers.pipefy.com/reference/tables.md)
+- [Table Records](https://developers.pipefy.com/reference/table-records.md)
+- [Summary](https://developers.pipefy.com/reference/summary-examples.md)
+- [AI Agents Usage](https://developers.pipefy.com/reference/agents-usage-details-query.md): Get information about the usage of AI Agents on an organization.
+- [Enable or disable AI features](https://developers.pipefy.com/reference/update-ai-settings-mutation.md): Control if AI features can be used in your organization
+- [Get Active LLM Provider](https://developers.pipefy.com/reference/active-llm-providers-query.md): Retrieve the currently active Large Language Model (LLM) provider for a specific assistant or for the organization.
+- [Set Active LLM Provider](https://developers.pipefy.com/reference/set-active-llm-provider-mutation.md): Define which LLM provider configuration is active for a given assistant or for the entire organization.
+- [Create LLM Provider](https://developers.pipefy.com/reference/create-llm-provider.md): Create a new Large Language Model (LLM) provider configuration for an organization.
+- [Update LLM Provider](https://developers.pipefy.com/reference/update-llm-provider.md): Update the name or configuration of an existing Large Language Model (LLM) provider.
+- [Delete LLM Provider](https://developers.pipefy.com/reference/delete-llm-provider.md): Permanently delete an existing Large Language Model (LLM) provider configuration.
+- [Check Provider Dependencies](https://developers.pipefy.com/reference/provider-dependencies.md): Check which entities (assistants, etc.) are currently using a specific LLM provider configuration.
+- [List LLM Providers by Organization](https://developers.pipefy.com/reference/llm-providers-by-organization.md): Retrieve all Large Language Model (LLM) provider configurations for a given organization.
+- [Get an AI Agent by UUID](https://developers.pipefy.com/reference/ai-agent-query.md): Retrieve a single AI agent and its full behavior configuration
+- [Retrieve AI Agents](https://developers.pipefy.com/reference/ai-agents-query.md)
+- [Retrieve AI Agent Log Details](https://developers.pipefy.com/reference/ai-agent-log-details-query.md)
+- [Retrieve AI Agent Logs by Repo](https://developers.pipefy.com/reference/ai-agent-logs-by-repo-query.md)
+- [Create AI Agent](https://developers.pipefy.com/reference/create-ai-agent-mutation.md): Create a new AI agent with behaviors in a pipe or table
+- [Update AI Agent](https://developers.pipefy.com/reference/update-ai-agent-mutation.md): Update an existing AI agent by UUID
+- [Update AI Agent Status](https://developers.pipefy.com/reference/update-ai-agent-status-mutation.md): Enable or disable an AI agent by UUID
+- [Delete AI Agent](https://developers.pipefy.com/reference/delete-ai-agent-mutation.md): Delete an existing AI agent by UUID
+- [Set LLM Provider Active Status](https://developers.pipefy.com/reference/set-llm-provider-active-status.md): Toggles a Large Language Model (LLM) provider active status
+- [Reset LLM Provider Owner](https://developers.pipefy.com/reference/reset-llm-provider-owner-mutation.md): Resets an LLM provider owner back to PipefyAI defaults
+- [Available AI Models Query](https://developers.pipefy.com/reference/available-models-query.md): Retrieves the available models for a specific AI provider
+- [Get Default LLM Provider](https://developers.pipefy.com/reference/default-llm-provider-query.md): Retrieve the default Large Language Model (LLM) provider configuration for a specific assistant or for the organization.
+- [Create Knowledge Base Document](https://developers.pipefy.com/reference/create-knowledge-base-document-mutation.md): Create a pipe-scoped knowledge base document for use with AI agents
+- [Update Knowledge Base Document](https://developers.pipefy.com/reference/update-knowledge-base-document-mutation.md): Update the name, description, or file of a pipe-scoped knowledge base document
+- [Delete Knowledge Base Document](https://developers.pipefy.com/reference/delete-knowledge-base-document-mutation.md): Delete a pipe-scoped knowledge base document
+- [Create Assistant Knowledge Base Document](https://developers.pipefy.com/reference/create-assistant-knowledge-base-document-mutation.md): Create a knowledge base document for an AI assistant
+- [Update Assistant Knowledge Base Document](https://developers.pipefy.com/reference/update-assistant-knowledge-base-document-mutation.md): Update the name, description, or file of a knowledge base document for an AI assistant
+- [Delete Assistant Knowledge Base Document](https://developers.pipefy.com/reference/delete-assistant-knowledge-base-document-mutation.md): Delete a knowledge base document from an AI assistant
+- [Create Knowledge Base Data Lookup](https://developers.pipefy.com/reference/create-knowledge-base-data-lookup-mutation.md): Create a pipe-scoped knowledge base data lookup for use with AI agents
+- [Update Knowledge Base Data Lookup](https://developers.pipefy.com/reference/update-knowledge-base-data-lookup-mutation.md): Update the name, description, or query configuration of a pipe-scoped knowledge base data lookup
+- [Delete Knowledge Base Data Lookup](https://developers.pipefy.com/reference/delete-knowledge-base-data-lookup-mutation.md): Delete a pipe-scoped knowledge base data lookup
+- [Create Knowledge Base Plain Text](https://developers.pipefy.com/reference/create-knowledge-base-plain-text-mutation.md): Create a pipe-scoped knowledge base plain text for use with AI agents
+- [Update Knowledge Base Plain Text](https://developers.pipefy.com/reference/update-knowledge-base-plain-text-mutation.md): Update a pipe-scoped knowledge base plain text for use with AI agents
+- [Delete Knowledge Base Plain Text](https://developers.pipefy.com/reference/delete-knowledge-base-plain-text-mutation.md): Delete a pipe-scoped knowledge base plain text
+- [List Knowledge Base Items](https://developers.pipefy.com/reference/list-knowledge-bases-query.md): Retrieve all knowledge base data sources for a pipe
+- [Get Knowledge Base Document](https://developers.pipefy.com/reference/get-knowledge-base-document-query.md): Retrieve a pipe-scoped knowledge base document by ID
+- [Get Knowledge Base Plain Text](https://developers.pipefy.com/reference/get-knowledge-base-plain-text-query.md): Retrieve a pipe-scoped knowledge base plain text by ID
+- [Get Knowledge Base Data Lookup](https://developers.pipefy.com/reference/get-knowledge-base-data-lookup-query.md): Retrieve a pipe-scoped knowledge base data lookup by ID
+- [List Assistant Knowledge Base Items](https://developers.pipefy.com/reference/list-assistant-knowledge-bases-query.md): Retrieve all knowledge base data sources for an AI assistant
+- [Get Assistant Knowledge Base Document](https://developers.pipefy.com/reference/get-assistant-knowledge-base-document-query.md): Retrieve an assistant-scoped knowledge base document by ID
+- [Retrieve AI Agent Log Node Details](https://developers.pipefy.com/reference/ai-agent-log-node-details-query.md)
+- [Duplicate AI Agent](https://developers.pipefy.com/reference/duplicate-ai-agent-mutation.md): Create a disabled copy of an existing AI agent in the same pipe, keeping its full configuration
+- [List All LLM Providers by Organization](https://developers.pipefy.com/reference/all-llm-providers-by-organization.md): Retrieve every LLM provider available to an organization — Pipefy-managed (system) providers and custom providers — in a single query.
+- [Get an Automation by ID](https://developers.pipefy.com/reference/automation.md)
+- [Automation Actions](https://developers.pipefy.com/reference/automation-actions.md)
+- [Automation Events](https://developers.pipefy.com/reference/automation-events.md)
+- [Automations Usage](https://developers.pipefy.com/reference/automations-usage-details-query.md): Get information about the usage of Automations on an organization.
+- [Retrieve Automations](https://developers.pipefy.com/reference/retrieve-automations.md)
+- [Retrieve Automation Logs](https://developers.pipefy.com/reference/automation-logs.md)
+- [Retrieve Automation Logs by Repo](https://developers.pipefy.com/reference/automation-logs-by-repo.md)
+- [Get Automation Initial Values](https://developers.pipefy.com/reference/automation-initial-values.md)
+- [Get Automation Event Attributes](https://developers.pipefy.com/reference/automation-event-attributes.md)
+- [List Automated Formula Operations](https://developers.pipefy.com/reference/automated-formula-operations.md)
+- [Export Automation Jobs](https://developers.pipefy.com/reference/export-automation-jobs.md): How to create and retrieve an automation jobs export using GraphQL
+- [Simulate Automation Execution](https://developers.pipefy.com/reference/automation-simulation.md): How to simulate an automation and retrieve the simulation result using GraphQL
+- [Create Automation](https://developers.pipefy.com/reference/automation-creation.md): Two examples: AI generation on card created, and update a field when a card moves to a phase
+- [Delete Automation](https://developers.pipefy.com/reference/automation-deletion.md): Delete an existing automation by ID
+- [Update Automation](https://developers.pipefy.com/reference/automation-update.md): Update an existing automation by ID
+- [Retrieve an Automation by UUID](https://developers.pipefy.com/reference/retrieve-automation-by-uuid.md)
+- [Automation Execution Metrics](https://developers.pipefy.com/reference/automation-execution-metrics.md)
+- [Add attachments to a card or field](https://developers.pipefy.com/reference/add-attachments-to-a-card-or-field.md)
+- [Create a card with the required fields fulfilled](https://developers.pipefy.com/reference/create-a-card-with-the-required-fields-fulfilled.md)
+- [Create fields in a phase](https://developers.pipefy.com/reference/create-fields-in-a-phase.md)
+- [Move Card to a Different Phase](https://developers.pipefy.com/reference/move-card-to-a-different-phase.md)
+- [Create connected cards using throughConnectors](https://developers.pipefy.com/reference/create-connected-cards.md): Learn how to create cards that are connected through connector fields using the throughConnectors parameter
+- [List a Card's Activities](https://developers.pipefy.com/reference/list-card-activities.md): Retrieve the timeline of phase transitions and received emails for a card using the activities query.
+- [Create and send an email through a card](https://developers.pipefy.com/reference/create-and-send-an-email-through-a-card.md)
+- [List emails from a card](https://developers.pipefy.com/reference/list-emails-from-a-card.md)
+- [Get a parsed email template](https://developers.pipefy.com/reference/parsed-email-template-query.md): Fetch an email template with dynamic placeholders resolved for a specific card (or the raw template when no card is provided).
+- [Create and send an inbox email in one request](https://developers.pipefy.com/reference/create-and-send-inbox-email-in-one-request.md): Use the createAndSendInboxEmail mutation to create an inbox email and send it in a single GraphQL request.
+- [Get an email template by ID](https://developers.pipefy.com/reference/email-template-query.md): Fetch a single email template by its ID (raw template, no placeholder parsing).
+- [Get a single inbox email](https://developers.pipefy.com/reference/get-a-single-inbox-email.md): Look up one inbox email by its ID, including its content, metadata, and attachments.
+- [List email templates for a pipe](https://developers.pipefy.com/reference/email-templates-query.md): Fetch a paginated list of email templates for a given repo, with optional filter by name.
+- [Configure a Start Form on existing pipe](https://developers.pipefy.com/reference/configure-a-start-form-on-existing-pipe.md)
+- [Create a pipe with Start Form configured](https://developers.pipefy.com/reference/create-a-pipe-with-start-form-configured.md)
+- [Filter Authorized Forms to Me by Organization](https://developers.pipefy.com/reference/filter-authorized-forms-to-me-by-organization.md): Filter which pipes from a given list you have permission to fill out start forms for a specific organization.
+- [Organization Usage Stats](https://developers.pipefy.com/reference/organization-usage-stats.md)
+- [Retrieve Organization Settings](https://developers.pipefy.com/reference/retrieve-organization-settings.md)
+- [Track active users in your organization](https://developers.pipefy.com/reference/track-active-users-in-your-organization.md)
+- [Fetch Organization Active Subscription](https://developers.pipefy.com/reference/fetch-organization-active-subscription.md)
+- [Create fields in a phase](https://developers.pipefy.com/reference/create-fields-in-phase.md)
+- [Move Card to a Different Phase](https://developers.pipefy.com/reference/move-a-card-to-a-different-phase.md)
+- [Update Phase Settings](https://developers.pipefy.com/reference/update-phase-settings.md)
+- [Reorder phase fields](https://developers.pipefy.com/reference/reorder-phase-fields.md): Move a phase field up or down to change the order it appears in a phase.
+- [Create a pipe with Start Form configured](https://developers.pipefy.com/reference/create-pipe-with-start-form-configured.md)
+- [Get pipe flow (phases with related AI agents and automations)](https://developers.pipefy.com/reference/pipe-flow-query.md): Query a pipe's flow by UUID to retrieve phases and their related active AI agents and automations.
+- [List pipes with the integrations app active](https://developers.pipefy.com/reference/pipes-with-active-integrations-query.md): Query all pipes accessible by the authenticated user in an organization that have the integrations app enabled.
+- [Update Repo Preferences](https://developers.pipefy.com/reference/update-repo-preferences.md): Hide or show specific buttons and start form attributes in a pipe using the updateRepoPreferences mutation.
+- [Get Resource IDs](https://developers.pipefy.com/reference/get-resource-ids.md)
+- [Pagination Basics](https://developers.pipefy.com/reference/pagination-basics.md)
+- [Run Multiple Queries or Mutations in a Single Request](https://developers.pipefy.com/reference/run-multiple-queries-or-mutations-in-a-single-request.md)
+- [Get Reports](https://developers.pipefy.com/reference/get-reports.md)
+- [Get Organization Report](https://developers.pipefy.com/reference/get-organization-report.md): Retrieve a specific organization report by its ID
+- [Get Organization Reports](https://developers.pipefy.com/reference/get-organization-reports.md): Retrieve all organization reports for a specific organization
+- [Create Organization Report](https://developers.pipefy.com/reference/create-organization-report.md): Create a new organization report with specified configuration
+- [Update Organization Report](https://developers.pipefy.com/reference/update-organization-report.md): Update an existing organization report configuration
+- [Delete Organization Report](https://developers.pipefy.com/reference/delete-organization-report.md): Delete an existing organization report
+- [Export Organization Report](https://developers.pipefy.com/reference/export-organization-report.md): How to create and retrieve an organization report export using GraphQL
+- [Export Pipe Activities Report](https://developers.pipefy.com/reference/export-pipe-audit-logs-report.md): How to export a pipe activities report using the exportPipeAuditLogsReport GraphQL mutation
+- [Create Pipe Report](https://developers.pipefy.com/reference/create-pipe-report.md): Create a new pipe report with specified configuration
+- [Export Org Activities Report](https://developers.pipefy.com/reference/export-org-audit-logs-report.md): How to export an organization-wide activities report using the exportOrgAuditLogsReport GraphQL mutation
+- [Update Pipe Report](https://developers.pipefy.com/reference/update-pipe-report.md): Update an existing pipe report configuration
+- [Delete Pipe Report](https://developers.pipefy.com/reference/delete-pipe-report.md): Delete an existing pipe report
+- [Get Pipe Reports](https://developers.pipefy.com/reference/get-pipe-reports.md): Retrieve all pipe reports for a specific pipe
+- [Get Pipe Report Columns](https://developers.pipefy.com/reference/get-pipe-report-columns.md): Retrieve available columns for pipe report configuration
+- [Get Pipe Report Filterable Fields](https://developers.pipefy.com/reference/get-pipe-report-filterable-fields.md): Retrieve filterable fields structure for pipe report configuration
+- [Get Organization Report Filterable Fields](https://developers.pipefy.com/reference/get-organization-report-filterable-fields.md): Retrieve filterable fields metadata for organization report configuration
+- [Search Cards Across Pipes in an Organization](https://developers.pipefy.com/reference/search-cards.md): Run a filtered, paginated, sorted search for cards across one or more pipes of an organization, with a total match count.
+- [Duplicate Pipe Report](https://developers.pipefy.com/reference/duplicate-pipe-report.md): Copy an existing pipe report into the same pipe
+- [Add Tags to a Resource](https://developers.pipefy.com/reference/add-tags-to-resource.md): Add multiple tags to a resource using its UUID and type.
+- [Retrieve Tag Categories of an Organization](https://developers.pipefy.com/reference/tag-categories.md): Retrieve all tag categories for an organization, including details about the user who created each category.
+- [Retrieve Tags by Category of an Organization](https://developers.pipefy.com/reference/tags-by-category.md): Get all tags grouped by category, including all the information of the category.
+- [Retrieve Tags by Category on a Resource](https://developers.pipefy.com/reference/tags-by-category-on-resource.md): Get all tags grouped by category, indicating whether each tag is already applied to a given resource.
+- [Update Tag Category](https://developers.pipefy.com/reference/update-tag-category.md): Updates the name of a tag category
+- [Create Tags in Bulk](https://developers.pipefy.com/reference/create-tags-in-bulk.md): Create multiple tags at once by specifying their names and the target organization or tag category.
+- [Update tags Visibility by Category](https://developers.pipefy.com/reference/update-tags-visibility.md): Update the visibility settings of all the tags in a category.
+- [Update Tag](https://developers.pipefy.com/reference/update-tag.md): Updates a Tag
+- [Create Tag](https://developers.pipefy.com/reference/create-tag.md): Create one tag.
+- [Remove Tags from a Resource](https://developers.pipefy.com/reference/remove-tags-from-resource.md): Remove multiple tags from a resource using its UUID and type.
+- [Retrieve a Tag by UUID](https://developers.pipefy.com/reference/tag.md): Retrieve a specific tag and its details using its UUID.
+- [AI Agents Usage](https://developers.pipefy.com/reference/agent-usage-details-query.md): Get information about the usage of AI Agents on an organization.
+- [Automations Usage](https://developers.pipefy.com/reference/automation-usage-details-query.md): Get information about the usage of Automations on an organization.
+- [Organization Usage Stats](https://developers.pipefy.com/reference/organization-usage-stats-query.md)
+- [AI Credits Usage Stats](https://developers.pipefy.com/reference/ai-credits-usage-stats-query.md): Get general information about the usage of AI credits in the organization.
+- [API Usage Stats](https://developers.pipefy.com/reference/api-usage-stats-query.md): Retrieve the limit, filter date and the total usage of API calls or the usage broken down by operation name or token, to identify top consumers.
+- [API Usage Stats Daily](https://developers.pipefy.com/reference/api-usage-stats-daily-query.md): Retrieve the daily usage of API calls for a certain period
+- [List Organizations with Usage Stats Access](https://developers.pipefy.com/reference/my-usage-stats-organizations-query.md): Discover the organizations where the authenticated user can view usage statistics.
+- [Combined API Usage Stats](https://developers.pipefy.com/reference/api-usage-stats-combined-query.md): Retrieve combined API-call usage, per-organization breakdown, and top consumers across a set of organizations the authenticated user can access.
+- [Combined AI Credit Usage Stats](https://developers.pipefy.com/reference/ai-credit-usage-stats-combined-query.md): Retrieve combined AI credit usage, per-organization breakdown, and top AI agents across a set of organizations the authenticated user can access.
+- [Combined Automation Usage Stats](https://developers.pipefy.com/reference/automations-usage-details-combined-query.md): Retrieve combined automation usage with per-organization, per-pipe, and top-automation breakdowns across organizations the authenticated user can access.
+- [Integrations Usage Stats](https://developers.pipefy.com/reference/integrations-usage-stats-query.md): Get a summary of how an organization's integrations (ActivePieces) flows consume tasks over a period.
+- [Integrations Usage Details](https://developers.pipefy.com/reference/integrations-usage-details-query.md): Get a paginated, per-flow breakdown of an organization's integrations (ActivePieces) task usage.
+- [Create Multi-Org Usage Report Export](https://developers.pipefy.com/reference/create-multi-org-usage-report-export-mutation.md): Trigger an asynchronous multi-organization usage report export (API calls or automations) delivered by email.
+- [Create Multi-Org Users Report Export](https://developers.pipefy.com/reference/create-multi-org-users-report-export-mutation.md): Trigger an asynchronous multi-organization users export delivered by email.
+- [Set User's Favorite Pipes](https://developers.pipefy.com/reference/set-user-favorite-pipes.md): Update a user's list of frequently accessed pipes for quick access
+- [Set User Roles via GraphQL Mutation](https://developers.pipefy.com/reference/set-user-roles-via-graphql-mutation.md)
+- [Get users suggestions by Organization UUID](https://developers.pipefy.com/reference/see-users-suggestions.md)
+- [Export Organization Members](https://developers.pipefy.com/reference/export-organization-members.md): Export the list of an organization's members to a downloadable file and get a temporary download URL.
+- [Get field dependencies by field UUID](https://developers.pipefy.com/reference/search-for-field-dependencies.md)
+- [Archive Field](https://developers.pipefy.com/reference/archive-field.md): How to archive a field using GraphQL mutation
+- [Unarchive Field](https://developers.pipefy.com/reference/unarchive-field.md): How to unarchive a field using GraphQL mutation
+- [See a Ticket by ID](https://developers.pipefy.com/reference/see-tickets.md)
+- [Create SMTP Configuration](https://developers.pipefy.com/reference/create-smtp-configuration.md): Create an SMTP configuration via the Internal GraphQL API, with or without IP relay credentials.
+- [List SMTP Configurations](https://developers.pipefy.com/reference/list-smtp-configurations.md): Retrieve SMTP configurations for an organization, with optional filtering by default configuration.
+- [Update SMTP Configuration](https://developers.pipefy.com/reference/update-smtp-configuration.md): Update an existing SMTP configuration for an organization, changing host, port, credentials, or the default flag.
+- [Delete SMTP Configuration](https://developers.pipefy.com/reference/delete-smtp-configuration.md): Delete an existing SMTP configuration from an organization.
+- [Create SMTP Custom Email with SMTP Configuration](https://developers.pipefy.com/reference/create-smtp-custom-email-with-configuration.md): Create a sender (SMTP Custom Email) alongside its SMTP configuration via the Internal GraphQL API.
+- [Get SMTP Custom Email](https://developers.pipefy.com/reference/get-smtp-custom-email.md): Retrieve a single SMTP Custom Email (sender) by its ID via the Pipefy GraphQL API.
+- [Create an SMTP Custom Email](https://developers.pipefy.com/reference/create-smtp-custom-email.md): Create a custom sender (SMTP Custom Email) for an existing SMTP configuration via the GraphQL API.
+- [Update an SMTP Custom Email](https://developers.pipefy.com/reference/update-smtp-custom-email.md): Update a custom sender (SMTP Custom Email) and, optionally, its SMTP configuration via the GraphQL API.
+- [Delete an SMTP Custom Email](https://developers.pipefy.com/reference/delete-smtp-custom-email.md): Delete a custom sender (SMTP Custom Email) via the GraphQL API.
+- [Set the Default Organization SMTP Custom Email](https://developers.pipefy.com/reference/set-default-organization-smtp-custom-email.md): Define which SMTP Custom Email is used as the default sender for an organization via the GraphQL API.
+- [List SMTP Custom Emails](https://developers.pipefy.com/reference/list-smtp-custom-emails.md): Retrieve the SMTP Custom Emails of an organization, optionally filtering by SMTP configuration or email address.
+- [List Organization SMTP Custom Emails (paginated)](https://developers.pipefy.com/reference/list-organization-smtp-custom-emails.md): Retrieve the SMTP Custom Emails of an organization with cursor-based pagination.
+- [Create Custom Role](https://developers.pipefy.com/reference/create-custom-role.md): Create a custom role for an organization.
+- [Delete Custom Role](https://developers.pipefy.com/reference/delete-custom-role.md): Delete a custom role from an organization.
+- [Save Role Permission](https://developers.pipefy.com/reference/save-role-permission.md): Update permissions for a custom role in an organization.
+- [Available Roles](https://developers.pipefy.com/reference/available-roles.md): Query available roles for a specific resource based on user permissions.
+- [Attach URL card (Platform App)](https://developers.pipefy.com/reference/attach-url-card-platform-app.md): Link an external URL to a card from a Pipefy Platform App via GraphQL
+- [Enable a Platform App](https://developers.pipefy.com/reference/enable-platform-app.md): Enable a Platform App on a pipe or database via the GraphQL API.
+- [Get a Phase Task by Card and Phase](https://developers.pipefy.com/reference/get-phase-task.md): Fetch a single phase task — its assignees, fulfillment status, and form link — for a given card and phase.
+- [List My Tasks in an Organization](https://developers.pipefy.com/reference/tasks.md): Retrieve the tasks assigned to the current user within an organization, with optional filtering by status, pipe, and search term.
+- [Create a Task on a Card](https://developers.pipefy.com/reference/create-task.md): Create a task on a card, in the card current phase, optionally assigning users by email and emailing each assignee a link to the task.
+- [List Records of a Pipe or Database](https://developers.pipefy.com/reference/list-records.md): Fetch records (cards or database records) from a repo with filtering, ordering, and cursor-based pagination.
+- [List Organization Groups](https://developers.pipefy.com/reference/list-organization-groups.md): Retrieve the groups of an organization, optionally filtered by name.
+- [Retrieve a Group, Its Owners, Users, and Available Interfaces](https://developers.pipefy.com/reference/retrieve-group-details-and-members.md): Fetch a single group by UUID, list its owners and users, and find the interfaces the group can still be added to.
+- [How to handle errors](https://developers.pipefy.com/reference/how-to-handle-errors.md)
+- [Receiving Unauthorized](https://developers.pipefy.com/reference/unauthorized-error.md)
+- [Receiving invalid_role](https://developers.pipefy.com/reference/invalid-role-errors.md)
+- [Receiving resource_not_found](https://developers.pipefy.com/reference/field-type-not-found-error-resource-not-found.md)
+- [Receiving missingRequiredInputObjectAttribute](https://developers.pipefy.com/reference/missing-required-argument-card-id-error-missingrequiredinputobjectattribute.md)
+- [Receiving usage_limit_exceeded](https://developers.pipefy.com/reference/email-rate-limit-exceeded-error-usage-limit-exceeded.md)
+- [Receiving Card could not be moved to phase](https://developers.pipefy.com/reference/card-could-not-be-moved-to-phase-error.md)
+- [Receiving invalid_input](https://developers.pipefy.com/reference/invalid-input-error-invalid-input.md)
+- [Status codes and Error Handling](https://developers.pipefy.com/reference/status-and-error-handling.md)
+- [Still Stuck?](https://developers.pipefy.com/reference/still-stuck.md)
+- [Organization Webhooks](https://developers.pipefy.com/reference/organization-webhooks.md)
+- [Pipe & Table Webhooks](https://developers.pipefy.com/reference/pipe-table-webhooks.md)
+- [Importing](https://developers.pipefy.com/reference/importer.md): Create cards or records from a xlsx spreadsheet.
+- [Cards Importer](https://developers.pipefy.com/reference/cards-importer.md): Mutation to create multiple cards in a pipe from a xlsx spreadsheet.
+- [Records Importer](https://developers.pipefy.com/reference/records-importer.md): Mutation to create multiple records in a database table from a xlsx spreadsheet.
+- [The GraphQL Endpoint](https://developers.pipefy.com/reference/the-graphql-endpoint.md)
+- [Introduction](https://developers.pipefy.com/reference/build-your-first-pipefy-app.md): Learn more about our Apps framework
+- [Features](https://developers.pipefy.com/reference/features.md): The places in Pipefy where your app can appear.
+- [card-badges](https://developers.pipefy.com/reference/card-badges.md): Indicators your app adds to cards on the board
+- [card-buttons](https://developers.pipefy.com/reference/card-buttons.md): Add a clickable button to an open card
+- [card-tab](https://developers.pipefy.com/reference/card-tab.md): Add a tab of your own inside a card
+- [pipe-buttons](https://developers.pipefy.com/reference/pipe-buttons.md): Add buttons on top of Pipe
+- [pipe-view](https://developers.pipefy.com/reference/pipe-view.md): A full-width view of your own that replaces the Kanban board
+- [Frequently Asked Questions](https://developers.pipefy.com/reference/frequently-asked-questions.md): Common questions about building, hosting and debugging apps
+- [Manifest reference](https://developers.pipefy.com/reference/manifestjson.md): More details about attributes inside manifest.json
+- [Apps Client SDK](https://developers.pipefy.com/reference/apps-client-sdk.md): The JavaScript SDK your app loads inside its iframe
+- [Client SDK overview](https://developers.pipefy.com/reference/getting-the-sdk.md): Loading the SDK, and the difference between initCall() and init()
+- [Get Pipefy data](https://developers.pipefy.com/reference/get-pipefy-data.md): Read the current card, pipe, fields, attachments and locale
+- [Make API calls](https://developers.pipefy.com/reference/make-api-calls.md): With this functionality, you can use our GraphQL to make API calls
+- [Custom App Data](https://developers.pipefy.com/reference/store-retrieve-custom-data.md): Store your app's own data, and attach links to cards
+- [User Interface functions](https://developers.pipefy.com/reference/user-interface-functions.md): Sidebars, modals, dropdowns, search, notifications and resizing
+- [Where each function works](https://developers.pipefy.com/reference/sdk-availability.md): Which PipefyApp functions are available at which mount point
+- [Promises](https://developers.pipefy.com/reference/promises.md): How asynchronous results are returned
+- [Publishing your App](https://developers.pipefy.com/reference/publishing-you-app.md): Private apps, public apps, and what review needs from you
+- [Sample Apps](https://developers.pipefy.com/reference/sample-apps.md): Working code to start from
+
+## Pages
+- [test](https://developers.pipefy.com/page/test.md)
+
+## Changelog
+- [GraphQL Changelog – July 2](https://developers.pipefy.com/changelog/graphql-changelog-july-2.md)
+- [GraphQL Changelog – June 24](https://developers.pipefy.com/changelog/graphql-changelog-june-24-1.md)
+- [GraphQL Changelog – June 24](https://developers.pipefy.com/changelog/graphql-changelog-june-24.md)
+- [GraphQL Changelog – June 29](https://developers.pipefy.com/changelog/graphql-changelog-june-29.md)
+- [GraphQL Changelog – June 16](https://developers.pipefy.com/changelog/graphql-changelog-june-16.md)
+- [GraphQL Changelog – June 5](https://developers.pipefy.com/changelog/graphql-changelog-june-5.md)
+- [GraphQL Changelog – March](https://developers.pipefy.com/changelog/graphql-changelog-march.md)
+- [GraphQL Changelog – December/25](https://developers.pipefy.com/changelog/graphql-changelog-december25.md)
+- [GraphQL Changelog – Week 10/11 to 14/11](https://developers.pipefy.com/changelog/graphql-changelog-week-1011-to-1411.md)
+- [GraphQL Changelog – Week 27/10 to 31/10](https://developers.pipefy.com/changelog/graphql-changelog-week-2710-to-3110.md)

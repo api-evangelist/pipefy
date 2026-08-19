@@ -1,0 +1,39 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "Pipefy GraphQL API",
+    "version": "1.0.0"
+  },
+  "request": {
+    "auth": {
+      "type": "bearer",
+      "token": "{{bearerToken}}"
+    }
+  },
+  "items": [
+    {
+      "info": {
+        "name": "GraphQL",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Execute a GraphQL query or mutation",
+            "type": "http"
+          },
+          "http": {
+            "method": "POST",
+            "url": "https://api.pipefy.com/graphql",
+            "body": {
+              "type": "json",
+              "data": "{}"
+            }
+          },
+          "docs": "Submit GraphQL queries and mutations against the Pipefy API.\nExample queries cover pipes, cards, phases, fields, organizations,\nusers, webhooks, AI agents, automations, and reports.\nExample mutations cover create/update/delete on pipes, cards,\nphases, fields, AI agents, automations, email templates, and roles.\n"
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
