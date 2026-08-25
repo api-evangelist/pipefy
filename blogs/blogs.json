@@ -6,17 +6,16 @@
       "feed_url": "https://community.pipefy.com",
       "title": "",
       "saved": 0,
-      "method": "none",
-      "error": "parse_failed"
+      "method": "none"
     },
     {
       "source": "https://www.pipefy.com/blog/feed/",
       "feed_url": "https://www.pipefy.com/blog/feed/",
       "title": "",
-      "saved": 3,
+      "saved": 0,
       "method": "feed"
     }
   ],
-  "post_count": 14,
-  "fetched": "2026-08-15T12:11:08Z"
+  "post_count": 18,
+  "fetched": "2026-08-22T20:20:02Z"
 }
