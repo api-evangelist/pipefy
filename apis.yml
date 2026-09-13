@@ -39,7 +39,6 @@ tags:
 - Workflow-Automation
 - Business Process Management
 - No-Code
-- BPM
 - GraphQL
 - Process Orchestration
 tags_raw:
@@ -66,7 +65,7 @@ apis:
   tags:
   - Workflow-Automation
   - GraphQL
-  - BPM
+  - Business Process Management
   - No-Code
   tags_raw:
   - Workflow Automation
