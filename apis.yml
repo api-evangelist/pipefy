@@ -83,16 +83,16 @@ apis:
     url: https://help.pipefy.com/en/articles/5580799-how-to-use-pipefy-s-api
   - url: graphql/pipefy-graphql.md
     type: GraphQL
-- aid: pipefy:pipefy-graphql-api
-  name: Pipefy GraphQL API
+- aid: pipefy:pipefy-graph-ql-api
+  name: Pipefy Graph QL API
   description: Single GraphQL entry point for all Pipefy operations.
   humanURL: https://developers.pipefy.com/reference/the-graphql-endpoint
   baseURL: https://api.pipefy.com/graphql
   tags:
-  - GraphQL
+  - Graph QL
   properties:
   - type: OpenAPI
-    url: openapi/pipefy-graphql-api-openapi.yml
+    url: openapi/pipefy-graph-ql-api-openapi.yml
 common:
 - type: AgenticAccess
   url: agentic-access/pipefy-agentic-access.yml
