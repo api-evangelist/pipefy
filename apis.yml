@@ -89,6 +89,8 @@ apis:
   humanURL: https://developers.pipefy.com/reference/the-graphql-endpoint
   baseURL: https://api.pipefy.com/graphql
   tags:
+  - GraphQL
+  tags_raw:
   - Graph QL
   properties:
   - type: OpenAPI
