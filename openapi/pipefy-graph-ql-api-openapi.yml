@@ -1,25 +1,11 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Pipefy GraphQL API
+  title: Pipefy Graph QL API
   description: 'Pipefy exposes a single GraphQL endpoint at https://api.pipefy.com/graphql
 
     for managing pipes, cards, phases, fields, organizations, users,
 
-    webhooks, and AI agents on the Pipefy workflow automation platform.
-
-
-    All operations - queries and mutations - are submitted as POST requests
-
-    to the /graphql endpoint with a JSON body of the form
-
-    `{ "query": "...", "variables": { ... } }`.
-
-
-    Authentication uses an OAuth 2.0 Bearer token (Personal Access Token or
-
-    Service Account) supplied in the Authorization header.
-
-    '
+    webhooks, and AI agents on the Pipefy workflow automation platform.'
   version: 1.0.0
   contact:
     name: API Evangelist
@@ -32,13 +18,13 @@ servers:
 security:
 - bearerAuth: []
 tags:
-- name: GraphQL
+- name: Graph QL
   description: Single GraphQL entry point for all Pipefy operations.
 paths:
   /graphql:
     post:
       tags:
-      - GraphQL
+      - Graph QL
       summary: Execute a GraphQL query or mutation
       description: 'Submit GraphQL queries and mutations against the Pipefy API.
 
@@ -48,9 +34,7 @@ paths:
 
         Example mutations cover create/update/delete on pipes, cards,
 
-        phases, fields, AI agents, automations, email templates, and roles.
-
-        '
+        phases, fields, AI agents, automations, email templates, and roles.'
       requestBody:
         required: true
         content:
@@ -83,8 +67,25 @@ paths:
           description: Missing or invalid Bearer token.
         '429':
           description: Rate limit exceeded.
+      operationId: postGraphql
+      x-operation-id-source: derived
 components:
   schemas:
+    GraphQLRequest:
+      type: object
+      required:
+      - query
+      properties:
+        query:
+          type: string
+          description: GraphQL query or mutation document.
+        variables:
+          type: object
+          description: GraphQL variables map.
+          additionalProperties: true
+        operationName:
+          type: string
+          description: Optional named operation to execute.
     GraphQLResponse:
       type: object
       properties:
@@ -105,21 +106,6 @@ components:
               extensions:
                 type: object
                 additionalProperties: true
-    GraphQLRequest:
-      type: object
-      required:
-      - query
-      properties:
-        query:
-          type: string
-          description: GraphQL query or mutation document.
-        variables:
-          type: object
-          description: GraphQL variables map.
-          additionalProperties: true
-        operationName:
-          type: string
-          description: Optional named operation to execute.
   securitySchemes:
     bearerAuth:
       type: http
