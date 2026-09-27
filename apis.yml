@@ -36,7 +36,7 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/pipefy.png
 tags:
-- Workflow-Automation
+- Workflow Automation
 - Business Process Management
 - No-Code
 - GraphQL
@@ -48,6 +48,7 @@ tags_raw:
 - BPM
 - GraphQL
 - Process Orchestration
+- Workflow-Automation
 url: >-
   https://raw.githubusercontent.com/api-evangelist/pipefy/refs/heads/main/apis.yml
 created: '2026-05-11'
@@ -63,7 +64,7 @@ apis:
   humanURL: https://developers.pipefy.com/reference/the-graphql-endpoint
   baseURL: https://api.pipefy.com/graphql
   tags:
-  - Workflow-Automation
+  - Workflow Automation
   - GraphQL
   - Business Process Management
   - No-Code
@@ -72,6 +73,7 @@ apis:
   - GraphQL
   - BPM
   - No-Code
+  - Workflow-Automation
   properties:
   - type: Documentation
     url: https://developers.pipefy.com/reference
@@ -89,8 +91,6 @@ apis:
   humanURL: https://developers.pipefy.com/reference/the-graphql-endpoint
   baseURL: https://api.pipefy.com/graphql
   tags:
-  - GraphQL
-  tags_raw:
   - Graph QL
   properties:
   - type: OpenAPI

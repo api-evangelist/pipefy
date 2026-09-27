@@ -1,6 +1,6 @@
 openapi: 3.2.0
 info:
-  title: Pipefy Graph QL API
+  title: Pipefy GraphQL API
   description: 'Pipefy exposes a single GraphQL endpoint at https://api.pipefy.com/graphql
 
     for managing pipes, cards, phases, fields, organizations, users,
