@@ -1,4 +1,4 @@
-# Pipefy (pipefy)
+# Pipefy
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,66 +66,116 @@
 
 Pipefy is a no-code business process and workflow automation platform that lets teams build, run, and orchestrate processes such as procurement, HR onboarding, customer onboarding, and IT service requests using customizable pipes, forms, and AI agents. The platform exposes a GraphQL API at api.pipefy.com/graphql for managing pipes, cards, phases, fields, users, organizations, webhooks, and AI-driven workflow integrations, with OAuth2 Bearer token authentication via Personal Access Tokens or Service Accounts.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/pipefy/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/pipefy/refs/heads/main/apis.yml)
+**Areas:** Workflow Automation · Business Process Management · No-Code · GraphQL · Process Orchestration
 
-## Scope
+## Pipefy on APIs.io
 
-- **Type:** Index
+Everything profiled for Pipefy is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/pipefy/](https://apis.io/providers/pipefy/)** — or go straight to one of the APIs or properties below.
 
-## Tags
+### APIs (2)
 
-- Workflow Automation
-- Business Process Management
-- No-Code
-- BPM
-- GraphQL
-- Process Orchestration
+- [Pipefy GraphQL API](https://apis.io/apis/pipefy/graphql-api/) — GraphQL API for managing pipes, cards, phases, fields, organizations, users, webhooks, and AI agents on the Pipefy workflow automation platform.…
+- [Pipefy Graph QL API](https://apis.io/apis/pipefy/pipefy-graph-ql-api/) — Single GraphQL entry point for all Pipefy operations.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-05-11
-- **Modified:** 2026-05-11
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### GraphQL (1)
 
-### Pipefy GraphQL API
+GraphQL schemas.
 
-GraphQL API for managing pipes, cards, phases, fields, organizations, users, webhooks, and AI agents on the Pipefy workflow automation platform. Authentication is performed using an OAuth2 Bearer token (Personal Access Token or Service Account) in the Authorization header.
+- [Pipefy GraphQL API](https://apis.io/graphqls/pipefy/pipefy-graphql/)
 
-- **Human URL:** [https://developers.pipefy.com/reference/the-graphql-endpoint](https://developers.pipefy.com/reference/the-graphql-endpoint)
-- **Base URL:** `https://api.pipefy.com/graphql`
+#### MCP servers (1)
 
-#### Tags
+Model Context Protocol servers that expose the API to agents.
 
-- Workflow Automation
-- GraphQL
-- BPM
-- No-Code
+- [pipefy](https://apis.io/servers/pipefy/pipefy/)
 
-#### Properties
+#### Agentic access (1)
 
-- [Documentation](https://developers.pipefy.com/reference)
-- [Authentication](https://developers.pipefy.com/reference/authentication-copy)
-- [Graph Q L  Endpoint](https://developers.pipefy.com/reference/the-graphql-endpoint)
-- [Help  Center](https://help.pipefy.com/en/articles/5580799-how-to-use-pipefy-s-api)
-- [Postman Collection](collections/pipefy.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/pipefy.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Which operations an agent can call, which act, and which need a human in the loop.
 
-## Common Properties
+- [Pipefy Agentic Access](https://apis.io/agentic-access/pipefy/pipefy-agentic-access/)
 
-- [GitHub Organization](https://github.com/pipefy)
+#### Collections (2)
+
+Postman and Open Collection request collections.
+
+- [Pipefy GraphQL API](https://apis.io/collections/pipefy/open-pipefy/)
+- [Pipefy GraphQL API](https://apis.io/collections/pipefy/open-pipefy-graphql-api/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Pipefy Authentication](https://apis.io/security/pipefy/pipefy-authentication/)
+- [Pipefy Domain Security](https://apis.io/security/pipefy/pipefy-domain-security/)
+- [Pipefy Trust Center](https://apis.io/security/pipefy/pipefy-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://www.pipefy.com)
 - [Documentation](https://developers.pipefy.com)
 - [Pricing](https://www.pipefy.com/pricing/)
-- [Sign Up](https://app.pipefy.com/public/registration)
-- [Help  Center](https://help.pipefy.com)
-- [Community](https://community.pipefy.com)
 - [Blog](https://www.pipefy.com/blog/)
-- [Status Page](https://status.pipefy.com)
-- [LinkedIn](https://www.linkedin.com/company/pipefy/)
-- [L L Ms Txt](https://developers.pipefy.com/llms.txt)
+- [GitHub](https://github.com/pipefy)
+- [Status](https://status.pipefy.com)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 32.3** — thin · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 53.9 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 15.5 |
+| Access clarity | 31.6 |
+
+**Agent readiness 47.1** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 16.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/pipefy/](https://apis.io/providers/pipefy/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Pipefy: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/pipefy/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
